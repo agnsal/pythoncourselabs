@@ -12,9 +12,14 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License
 '''
 
-x = 1
-y = 1
-z = 2
+l = [0, 1, 2, 3, 4, 4, 4]
+print(l)
+print(type(l))
 
-print(y is x)
-print(y is not z)
+d = {'ita': 'ciao', 'eng': 'hello'}
+print(d)
+print(type(d))
+
+s = {0, 1, 2, 3, 4, 4, 4}
+print(s)
+print(type(s))
