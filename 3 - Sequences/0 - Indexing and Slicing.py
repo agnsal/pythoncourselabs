@@ -1,11 +1,14 @@
 s = 'python'
 l = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+print(f"s: {s}; len(s): {len(s)}")
+print(f"l: {l}; len(l): {len(l)}")
+
 s += " is a programming language"
 l += [10, 11, 12, 13, 14, 15]
 
-print(f"s: {s}")
-print(f"l: {l}")
+print(f"s: {s}; len(s): {len(s)}")
+print(f"l: {l}; len(l): {len(l)}")
 print(f"s[0]: {s[0]}")
 print(f"l[0]: {l[0]}")
 print(f"s[-1]: {s[-1]}")
