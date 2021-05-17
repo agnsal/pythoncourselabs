@@ -38,4 +38,9 @@ print(f"l[0:8:2]: {l[0:8:2]}")
 print(f"s[::-3]: {s[:-3]}")
 print(f"l[::-3]: {l[:-3]}")
 
+ll = [[0, 1], [2, 3], [4, 5]]
+print(f"ll: {ll}; len(ll {len(ll)}")
+print(f"ll[0]: {ll[0]}; type(ll[0]): {type(ll[0])}")
+print(f"ll[0][0]: {ll[0][0]}")
+
 # ToDo: read a string from a text file and print its last 10 chars
