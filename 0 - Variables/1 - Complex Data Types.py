@@ -12,14 +12,22 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License
 '''
 
+# Tuple
+t = (0, 1, 2)
+print(t)
+print(type(t))
+
+# List
 l = [0, 1, 2, 3, 4, 4, 4]
 print(l)
 print(type(l))
 
+# Dict
 d = {'ita': 'ciao', 'eng': 'hello'}
 print(d)
 print(type(d))
 
+# Set
 s = {0, 1, 2, 3, 4, 4, 4}
 print(s)
 print(type(s))
