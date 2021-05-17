@@ -29,3 +29,45 @@ dd = {
 print(f"dd: {dd}")
 print(f"dd['typology']: {dd['typology']}")
 print(f"dd['typology']['subcategory']: {dd['typology']['subcategory']}")
+
+print(f"Is 'felix' in d? {'felix' in d}")
+print(f"Is 'felix' in d? {'felix' in d.values()}")
+print(f"d.values() {d.values()}")
+print(f"Is 'name' in d? {'name' in d}")
+print(f"Is 'name' in d? {'name' in d.keys()}")
+print(f"d.keys() {d.keys()}")
+
+d['colour'] = 'white'
+print(f"d: {d}")
+
+colour = d.pop('colour')
+print(f"colour: {colour}")
+print(f"d: {d}")
+
+d.clear()
+print(f"d: {d}")
+
+# ToDo: Uncomment the following piece of code, then print public values only and, finally, print email value.
+'''
+x = {
+    "id": "10024",
+    "personal info": {
+        "public": {
+            "name": "Sara",
+            "surname": "Rossi"
+        },
+        "private": {
+            "date of birth": 1980,
+            "gender": "F"
+        }
+    },
+    "contacts": {
+        "public": {
+            "email": "sara@sara.it",
+        },
+        "private": {
+            "phone": "+39xxxxxxxxxx"
+        }
+    }
+}
+'''

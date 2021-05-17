@@ -45,3 +45,4 @@ myListCopy.append(100)
 print(f"myList: {myList}")
 print(f"myListCopy: {myListCopy}")
 
+# ToDo: Cycle inside l and copy all its values inside another list.
