@@ -12,7 +12,11 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License
 '''
 
-a = 1
+x = "stringaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n" \
+    "stringa"
+print(x)
+
+a = 1  # Questa è una variabile
 at = type(a)
 aID = id(a)
 b = 1.0
