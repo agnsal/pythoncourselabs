@@ -15,32 +15,35 @@ See the License for the specific language governing permissions and limitations 
 s = 'python'
 l = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-print(f"s: {s}; len(s): {len(s)}")
-print(f"l: {l}; len(l): {len(l)}")
+# print(f"s: {s}; len(s): {len(s)}")
+# print(f"l: {l}; len(l): {len(l)}")
 
 s += " is a programming language"
 l += [10, 11, 12, 13, 14, 15]
 
 print(f"s: {s}; len(s): {len(s)}")
 print(f"l: {l}; len(l): {len(l)}")
-print(f"s[0]: {s[0]}")
-print(f"l[0]: {l[0]}")
-print(f"s[-1]: {s[-1]}")
-print(f"l[-1]: {l[-1]}")
-print(f"s[1:5]: {s[1:5]}")
-print(f"l[1:5]: {l[1:5]}")
-print(f"s[:3]: {s[:3]}")
-print(f"l[:3]: {l[:3]}")
-print(f"s[:-3]: {s[:-3]}")
-print(f"l[:-3]: {l[:-3]}")
-print(f"s[0:8:2]: {s[0:8:2]}")
-print(f"l[0:8:2]: {l[0:8:2]}")
-print(f"s[::-3]: {s[:-3]}")
-print(f"l[::-3]: {l[:-3]}")
+# print(f"s[0]: {s[0]}")
+# print(f"l[0]: {l[2]}")
+# print(f"s[-1]: {s[-1]}")
+# print(f"l[-1]: {l[-1]}")
+# print(f"s[1:5]: {s[1:5]}")
+# print(f"l[1:5]: {l[1:5]}")
+# print(f"s[:3]: {s[:3]}")
+# print(f"l[:3]: {l[:3]}")
+# print(f"s[:-3]: {s[:-3]}")
+# print(f"l[:-3]: {l[:-3]}")
+# print(f"s[0:8:2]: {s[0:8:2]}")
+# print(f"l[0:8:2]: {l[0:8:2]}")
+# print(f"s[::-3]: {s[:-3]}")
+# print(f"l[::-3]: {l[:-3]}")
 
 ll = [[0, 1], [2, 3], [4, 5]]
 print(f"ll: {ll}; len(ll {len(ll)}")
 print(f"ll[0]: {ll[0]}; type(ll[0]): {type(ll[0])}")
 print(f"ll[0][0]: {ll[0][0]}")
+
+lll = [[[0, 10], [1, 11]], [2, 3], [4, 5]]
+print(lll[0][1][1])
 
 # ToDo: read a string from a text file and print its last 10 chars

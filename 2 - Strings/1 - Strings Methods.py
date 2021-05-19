@@ -77,23 +77,26 @@ Stringiamci a coorte!
 Siam pronti alla morte;
 L'Italia chiamò."""
 
-print(f"####### Firts 100 text chars #######\n{text[0:100]}")
-textSplit = text.split('\n')
-print(f"####### textSplit type#######\n{type(textSplit)}")
-print(f"####### 1st textSplit line#######\n{textSplit[0]}")
-textAdd = "!!! Inno d'Italia !!!\n" + text
-print(f"######## First 100 textAdd chars########\n{textAdd[0:100]}")
-textJoin = "-".join(text)
-print(f"######## First 100 textJoin chars########\n{textJoin[0:100]}")
-textUpper = text.upper()
-print(f"######## First 100 textUpper chars########\n{textUpper[0:100]}")
+# print(f"####### Firts 100 text chars #######\n{text[0:100]}")
+# textSplit = text.split('\n')
+# print(f"####### textSplit type #######\n{type(textSplit)}")
+# print(f"####### 1st textSplit line#######\n{textSplit[0]}")
+# print(len(textSplit))
+# textAdd = "!!! Inno d'Italia !!!\n" + text + "\n^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+# print(f"######## First 100 textAdd chars########\n{textAdd[0:100]}")
+# print(f"######## Last 100 textAdd chars########\n{textAdd[-100:-1]}")
+# textJoin = "-".join(text)
+# print(f"######## First 100 textJoin chars########\n{textJoin[0:100]}")
+# textUpper = text.upper()
+# print(f"######## First 100 textUpper chars########\n{textUpper[0:100]}")
 textLower = text.lower()
 print(f"######## First 100 textLower chars########\n{textLower[0:100]}")
-textReplace = text.replace('Ita', 'ITA')
-print(f"######## First 100 textReplace chars########\n{textReplace[0:100]}")
-print(f"######## find 'Python' in text########\n{text.find('Python')}")
-print(f"######## find 'Ita' in text ########\n{text.find('Ita')}")
+# textReplace = text.replace('Ita', 'ITA')
+# print(f"######## First 100 textReplace chars########\n{textReplace[0:100]}")
+# print(f"######## find 'Python' in text########\n{text.find('Python')}")
+# print(f"######## find 'Ita' in text ########\n{text.find('Ita')}")
 print(f"######## count 'Python' in text ########\n{text.count('Python')}")
 print(f"######## count 'Ita' in text ########\n{text.count('Ita')}")
-
-# ToDo: Make a def that returns how many instances of some input words are present in an input text.
+print(f"######## count 'Ita' in text ########\n{text.lower().count('ita')}")
+#
+# # ToDo: Make a def that returns how many instances of some input words are present in an input text.

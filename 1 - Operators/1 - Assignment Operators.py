@@ -12,29 +12,28 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License
 '''
 
-print("=")
+# print("=")
 x = 4
-print(x)
-print("+=")
-x += 1
-print(x)
-print("-=")
-x -= 1
-print(x)
-print("*=")
-x *= 2
-print(x)
-print("/=")
-x /= 2
-print(x)
-print("//=")
-x //= 0.8
-print(x)
+# print(x)
+# print("+=")
+# x += 1  # x = x + 1
+# print(x)
+# print("-=")
+# x -= 1  # x = x - 1
+# print(x)
+# print("*=")
+# x *= 2
+# print(x)
+# print("/=")
+# x /= 2
+# print(x)
+# print("//=")
+# x //= 3
+# print(x)
 print("%=")
 x %= 3
-print(x)
-print("**=")
-x **= 2
-print(x)
+# print("**=")
+# x **= 2
+# print(x)
 
 # ToDo: Use assign operators in 1.0 ToDo.
