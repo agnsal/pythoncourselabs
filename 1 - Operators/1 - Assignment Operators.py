@@ -30,10 +30,30 @@ x = 4
 # print("//=")
 # x //= 3
 # print(x)
-print("%=")
-x %= 3
+# print("%=")
+# x %= 3
 # print("**=")
 # x **= 2
 # print(x)
 
 # ToDo: Use assign operators in 1.0 ToDo.
+
+
+def operations(x, y, op: str):
+    assert isinstance(x, int) or isinstance(x, float)
+    assert isinstance(y, int) or isinstance(y, float)
+    assert isinstance(op, str)
+    if op == "+":
+        x += y
+        return x
+    elif op == "-":
+        x -= y
+        return x
+    elif op == "*":
+        x *= y
+        return x
+    else:
+        return f"Not allowed op: {op}"
+
+
+print(operations(2, 2, '*'))

@@ -19,34 +19,50 @@ See the License for the specific language governing permissions and limitations 
 # print('z' in 'python')
 # print('tho' in 'python')
 
-a = 1  # Questa è una variabile
-at = type(a)
-aID = id(a)
-b = 1.0
-bt = type(b)
-c = "python 3"
-ct = type(c)
-d = None
-dt = type(d)
-e = False
-et = type(e)
+# a = 1  # Questa è una variabile
+# at = type(a)
+# aID = id(a)
+# b = 1.0
+# bt = type(b)
+# c = "python 3"
+# ct = type(c)
+# d = None
+# dt = type(d)
+# e = False
+# et = type(e)
 
-print("A:")
-print(a)
-print(at)
-print(aID)
-print("B:")
-print(b)
-print(bt)
-print("C:")
-print(c)
-print(ct)
-print("D:")
-print(d)
-print(dt)
-print("E:")
-print(e)
-print(et)
+# print("A:")
+# print(a)
+# print(at)
+# print(aID)
+# print("B:")
+# print(b)
+# print(bt)
+# print("C:")
+# print(c)
+# print(ct)
+# print("D:")
+# print(d)
+# print(dt)
+# print("E:")
+# print(e)
+# print(et)
+
+
+def studyVar(var):
+    print(f'The variable is: \' {var}')
+    print(f"The variable type is: {type(var)}")
+    print(f"The variable id is: {id(var)}")
+
+
+studyVar(1)
+studyVar(1.7)
+studyVar(True)
+studyVar("ciao")
+l0 = [8, 9]
+l1 = [1, 2]
+studyVar(l0)
+studyVar(l1)
 
 # What's the type of "1"?
 # ToDo: Print Function with IDs too.

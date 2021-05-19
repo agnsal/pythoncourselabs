@@ -46,12 +46,12 @@ See the License for the specific language governing permissions and limitations 
 # print(bool({}))
 
 
-def boolMaker(inputVar):
-    result = bool(inputVar)
-    return result
-
-def testDef():
-    print('Def!!!')
+# def boolMaker(inputVar):
+#     result = bool(inputVar)
+#     return result
+#
+# def testDef():
+#     print('Def!!!')
 
 
 # myBool = boolMaker(0)
@@ -63,12 +63,22 @@ def testDef():
 # myBool = boolMaker(3)
 # print(myBool)
 
-for i in range(0, 4):
-    myBool = boolMaker(i)
-    print(myBool)
-
-
-test = testDef()
-print(type(test))
+# for i in range(0, 4):
+#     myBool = boolMaker(i)
+#     print(myBool)
+#
+#
+# test = testDef()
+# print(type(test))
 
 # ToDo: Check if user input is not empty.
+
+def checkInput():
+    value = False
+    while not bool(value):
+        value = input("Inserire un valore\n")
+    print(f"Value is: {value}")
+
+
+if __name__ == '__main__':
+    checkInput()
