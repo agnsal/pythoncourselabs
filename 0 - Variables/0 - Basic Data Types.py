@@ -48,21 +48,38 @@ See the License for the specific language governing permissions and limitations 
 # print(e)
 # print(et)
 
+x = "My GLOBAL X"
 
 def studyVar(var):
-    print(f'The variable is: \' {var}')
-    print(f"The variable type is: {type(var)}")
-    print(f"The variable id is: {id(var)}")
+    # print(f'The variable is: \' {var}')
+    # print(f"The variable type is: {type(var)}")
+    # print(f"The variable id is: {id(var)}")
+    #print(f"------------ x: {x}")
+    y = "STUDYVAR VARIABLE"
+    #print(f"LOCAL!!!!! {y}")
+    # print(f"X1: {x}")
+    x = "ciao"
+    def test():
+        nonlocal x
+        x = "python!!!!!"
+        print(f"ENCLOSED!!!!! {x}")
+        return y
+
+    res = test()
+    print(f"NON LOCAL: {x}")
+    #print(f"Y: {res}")
 
 
 studyVar(1)
-studyVar(1.7)
-studyVar(True)
-studyVar("ciao")
-l0 = [8, 9]
-l1 = [1, 2]
-studyVar(l0)
-studyVar(l1)
+print(f"GLOBAL!!!!!!! {x}")
+
+# studyVar(1.7)
+# studyVar(True)
+# studyVar("ciao")
+# l0 = [8, 9]
+# l1 = [1, 2]
+# studyVar(l0)
+# studyVar(l1)
 
 # What's the type of "1"?
 # ToDo: Print Function with IDs too.
