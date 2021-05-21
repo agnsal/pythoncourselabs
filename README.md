@@ -1,7 +1,7 @@
 # PythonCourseLabs
 
 ## Exercises
-Excercises and other change performed during the course are available at "modified" branch.
+Excercises solutions and other changes performed during the course are available at "modified" branch.
 
 ## Additional useful links
 - https://docs.python.org/3/library/venv.html
