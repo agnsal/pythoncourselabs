@@ -23,6 +23,8 @@ def kwargsF(a, b, **kwargs):
 
 def main(x):
     # t = Test(x)
+    args = argsF(10, 20, 1, 2, 3)
+    print(args)
     # kwargsF(b=1, a=2, c=3, z=4, l=5, y=6)
     pt = printTest
     # ...
