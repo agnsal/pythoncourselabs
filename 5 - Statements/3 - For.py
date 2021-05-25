@@ -12,33 +12,28 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License
 '''
 
-# l = [0, 1, 2, 3, 4, 5]
-# for x in l:
-#     print(x)
-# print("The end")
+l = [0, 1, 2, 3, 4, 5]
+for x in l:
+    print(x)
+print("The end")
 
 d = {'ita': 'ciao', 'eng': 'hello'}
 for y in d:
     print(d[y])
 print('The End')
 
-# d = {'ita': 'ciao', 'eng': 'hello'}
-# for _, val in d.items():
-#     print('val: ', val)
-# print('The End')
+s = 'python'
+for z in s:
+    print(z)
+print('The End')
 
-# s = 'python'
-# for z in s:
-#     print(z)
-# print('The End')
+for a in range(0, 4):
+    print(f"a: {a}")
+print('The End')
 
-# for a in range(0, 4):
-#     print(f"a: {a}")
-# print('The End')
+for b in range(0, 10, 3):
+    print(f"b: {b}")
+print('The End')
 
-# for b in range(0, 10, 3):
-#     print(f"b: {b}")
-# print('The End')
-
-# myList = [n for n in range(0, 10) if n % 2 == 0]
-# print(f"myList: {myList}")
+myList = [n for n in range(0, 10) if n % 2 == 0]
+print(f"myList: {myList}")

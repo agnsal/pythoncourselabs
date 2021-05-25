@@ -16,15 +16,13 @@ x = 1
 y = 2
 z = 3
 
-# if x != 0:
-#     print("x is not 0")
-# print('!!!!')
+if x != 0:
+    print("x is not 0")
 
-# if y == 2:
-#     print("y is 0")
-# else:
-#     print("y is not 0")
-# print("!!!!")
+if y == 0:
+    print("y is 0")
+else:
+    print("y is not 0")
 
 if z is 0:
     print("z is 0")

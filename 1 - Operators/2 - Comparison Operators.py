@@ -12,30 +12,14 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License
 '''
 
-# x = int(input("x = "))
-#
-# print(x > 0)  # (0, ...)
-# print(x < 0)  # (..., 0)
-# print(x == 0)  # 0
-# print(x != 0)  # (..., 0), (0, ...)
-# print(x >= 0)  # [0, ...)
-# print(x <= 0)  # (..., 0]
+x = int(input("x = "))
+
+print(x > 0)
+print(x < 0)
+print(x == 0)
+print(x != 0)
+print(x >= 0)
+print(x <= 0)
 
 # ToDo: Use if statements to make more detailed prints.
-
-
-def checker(x, y):
-    if x == y:
-        print(f"{x} is equal to {y}")
-    elif x > y:
-        print(f"{x} is > {y}")
-    else:
-        print(f"{x} is < {y}")
-
-
-# checker(20, 20)
-
-
 # ToDo: Check if x in in one of the following intervals: [-2, 5], (10, 100], (200, 300)
-x = 299.999
-print((x >= -2 and x <= 5) or (x > 10 and x <= 100) or (x > 200 and x < 300))

@@ -12,48 +12,29 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License
 '''
 
-# print("=")
+print("=")
 x = 4
-# print(x)
-# print("+=")
-# x += 1  # x = x + 1
-# print(x)
-# print("-=")
-# x -= 1  # x = x - 1
-# print(x)
-# print("*=")
-# x *= 2
-# print(x)
-# print("/=")
-# x /= 2
-# print(x)
-# print("//=")
-# x //= 3
-# print(x)
-# print("%=")
-# x %= 3
-# print("**=")
-# x **= 2
-# print(x)
+print(x)
+print("+=")
+x += 1
+print(x)
+print("-=")
+x -= 1
+print(x)
+print("*=")
+x *= 2
+print(x)
+print("/=")
+x /= 2
+print(x)
+print("//=")
+x //= 0.8
+print(x)
+print("%=")
+x %= 3
+print(x)
+print("**=")
+x **= 2
+print(x)
 
 # ToDo: Use assign operators in 1.0 ToDo.
-
-
-def operations(x, y, op: str):
-    assert isinstance(x, int) or isinstance(x, float)
-    assert isinstance(y, int) or isinstance(y, float)
-    assert isinstance(op, str)
-    if op == "+":
-        x += y
-        return x
-    elif op == "-":
-        x -= y
-        return x
-    elif op == "*":
-        x *= y
-        return x
-    else:
-        return f"Not allowed op: {op}"
-
-
-print(operations(2, 2, '*'))

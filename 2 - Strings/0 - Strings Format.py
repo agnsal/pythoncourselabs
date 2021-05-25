@@ -12,34 +12,16 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License
 '''
 
-# s = "hello"
-# x = "Python"
-# y = "!!!"
-# i = 100
+s = "hello"
+x = "Python"
+y = "!!!"
 
-# print(s + " Python" + "!!!")
-# print(s + " Python" + "!!!" + str(1))
-# print((s + ' ') * 3 + " Python" + "!" * 10)
-# print("hello %(x)s%(y)s" % {"x": "Python", "y": "!!!"})
-# print("hello {0}{1}".format(x, y))
-# print("hello {1} !!!!! {0}".format(x, y))
-# print("hello {x}{y} ____ {x}{x} {x}".format(x="Pluto", y="???"))
-# print(f"hello {x}{y} integer!!! {i}")
-# print(f"hello {x}{y} integer!!! {{{i}}}")
+print(s + " Python" + "!!!")
+print((s + ' ') * 3 + " Python" + "!" * 10)
+print("hello %(x)s%(y)s" % {"x": "Python", "y": "!!!"})
+print("hello {0}{1}".format(x, y))
+print("hello {1} {0}".format(x, y))
+print("hello {x}{y}".format(x="Pluto", y="???"))
+print(f"hello {x}{y}")
 
 # ToDO: Format strings coming from user inputs.
-
-
-def getUserInput(textForUser: str):
-    if isinstance(textForUser, str):
-        v = False
-        while not v:
-            v = input(textForUser)
-        return v
-    else:
-        print("Eccezione")
-
-
-ui = getUserInput("Inserisci del testo: ")
-print(f"Questo è il testo che avevo inserito: {ui}")
-
