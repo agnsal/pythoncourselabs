@@ -15,4 +15,6 @@ See the License for the specific language governing permissions and limitations 
 print('p' in 'python')
 print('a' in 'python')
 print('py' in 'python')
+print('pn' in 'python')
+print('p' in 'python' and 'n' in 'python')
 print('pn' not in 'python')
