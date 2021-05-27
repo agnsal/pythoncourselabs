@@ -18,3 +18,9 @@ while x < 10:
     print(x)
     x += 1
 print("The End")
+
+
+# if 1 == 1:
+#     print("1 è uguale a 1")
+#     print("Fine del blocco")
+
