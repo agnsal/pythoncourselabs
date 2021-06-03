@@ -39,7 +39,32 @@ def checkerNested(myVar):
     return innerChecker
 
 
+test = "Python"  # Global
+def checkerNestedLEGB():
+    test = "Ciao"  # Enclosed
+    def innerChecker():
+        global test
+        # test = "Course"  # Local
+        icVar = "icVar"
+        print("Inside innerChecker: ", test, " - id: ", id(test))
+        print(icVar)
+    print("Inside checkerNestedLEGB: ", test, " - id: ", id(test))
+    return innerChecker
+
+
+def outer():
+    y = 100
+    print("Outer Level (Before inner call): ", y, " - id: ", id(y))
+    def inner():
+        nonlocal y
+        y = 50
+        print("Inner Level: ", y, " - id: ", id(y))
+    inner()
+    print("Outer Level: ", y, " - id: ", id(y))
+
+
 def dictExplorer(d: dict):
+    print(vsTest)
     for k in d:
         if isinstance(d[k], dict):
             print(f'Dict!!! {k}: {d[k]}')
@@ -48,6 +73,11 @@ def dictExplorer(d: dict):
             print("NOT a Dict!!!")
             print(f"{k}: {d[k]}")
 
+
+vsTest = 100
+def sTest():
+    # vsTest = 2  # It overrides global vsTest
+    print(vsTest)
 
 # a = 10
 # cRes = checker(k=100, x=a)
@@ -60,18 +90,24 @@ def dictExplorer(d: dict):
 # c = res(a, 20)
 # print(f"c: {c}, type: {type(c)}")
 
-myDict = {
-    'a': 1,
-    'b': 2,
-    'c': {
-        'd': {
-            'e': 3,
-            'f': [4, 5]
-        }
-    },
-    'g': 'ciao'
-}
+# myDict = {
+#     'a': 1,
+#     'b': 2,
+#     'c': {
+#         'd': {
+#             'e': 3,
+#             'f': [4, 5]
+#         }
+#     },
+#     'g': 'ciao'
+# }
+#
+# dictExplorer(myDict)
 
-dictExplorer(myDict)
+# print(vsTest)
+# sTest()
 
+resLEGB = checkerNestedLEGB()()
+print("Inside main program: ", test, " - id: ", id(test))
 
+# outer()
