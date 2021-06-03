@@ -93,7 +93,18 @@ L'Italia chiamò."""
 # print(f"######## First 100 textReplace chars########\n{textReplace[0:100]}")
 # print(f"######## find 'Python' in text########\n{text.find('Python')}")
 # print(f"######## find 'Ita' in text ########\n{text.find('Ita')}")
-print(f"######## count 'Python' in text ########\n{text.count('Python')}")
-print(f"######## count 'Ita' in text ########\n{text.count('Ita')}")
+# print(f"######## count 'Python' in text ########\n{text.count('Python')}")
+# print(f"######## count 'Ita' in text ########\n{text.count('Ita')}")
 
 # ToDo: Make a def that returns how many instances of some input words are present in an input text.
+def countStr(t, s):
+    # assert isinstance(t, str)
+    # assert isinstance(s, str)
+    t = str(t)
+    s = str(s)
+    return t.lower().count(s.lower())
+
+myStr = "ItalIA"
+# print(countStr(text, 100))
+print(f"La stringa {myStr} è stata trovata {countStr(text, myStr)} volte")
+

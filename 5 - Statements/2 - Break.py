@@ -13,8 +13,15 @@ See the License for the specific language governing permissions and limitations 
 '''
 
 x = 0
+myVar = True
 
-while x < 10:
+while x < 10 and myVar:
+    for y in range(0, 5):
+        print("y: ", y)
+        if x == 4 and y == 2:
+            # print("3!!!")
+            myVar = False
+            break
     if x == 5:
         break
     print(f"x: {x}")
