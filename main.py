@@ -1,3 +1,5 @@
+# from collections import OrderedDict
+
 # import logging as l
 # from testPackage import *
 # # from testPackage import pVar0, pVar1, pVar2
@@ -107,7 +109,16 @@ def sTest():
 # print(vsTest)
 # sTest()
 
-resLEGB = checkerNestedLEGB()()
-print("Inside main program: ", test, " - id: ", id(test))
+# resLEGB = checkerNestedLEGB()()
+# print("Inside main program: ", test, " - id: ", id(test))
 
 # outer()
+
+l = ["agnese", "francesca"]
+print(l)
+l.insert(0, "paolo")
+print(l)
+l.pop()
+print(l)
+l.pop()
+print(l)
