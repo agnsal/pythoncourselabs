@@ -11,7 +11,12 @@ Unless required by applicable law or agreed to in writing, software distributed 
 an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and limitations under the License
 '''
-from os import path as p
+# from os import path as p
+# import os
+# os.path.isfile()
+# import ctypes
+# ctypes.cdll.LoadLibrary()
+# from ctypes import cdll
 
 # name = input("Name: ")
 # print(f"Name is {name}")
