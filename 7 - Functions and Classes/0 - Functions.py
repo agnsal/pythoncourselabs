@@ -29,32 +29,9 @@ def getUserInput():
     return s
 
 
-# fileN = getUserInput()
-# result, x = readMyFile(fileN)
-# if result:
-#     print(f"Content: {x}")
-# else:
-#     print(f"File not opened: {x}")
-
-
-# l = [0, 1, 2]
-# i = iter(l)
-# print(i, type(i))
-# # for elem in i:
-# #     print(elem)
-# print(next(i))
-# print(next(i))
-# print(next(i))
-# # print(next(i))
-# l2 = list(i)
-# print('l2: ', l2)
-# print('l: ', l)
-
-############################# NON SI FA!!!!!!!!!!!!!!!!!! ##############################
-# def str(*args, **kwargs):  # str è una buil-in di Python!!!!!!!!!!
-#     print(":)")
-#     print(args)
-#     print(kwargs)
-#
-# str(10, x=100, y=2)
-#########################################################################################
+fileN = getUserInput()
+result, x = readMyFile(fileN)
+if result:
+    print(f"Content: {x}")
+else:
+    print(f"File not opened: {x}")

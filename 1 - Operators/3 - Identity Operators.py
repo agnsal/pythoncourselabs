@@ -13,10 +13,8 @@ See the License for the specific language governing permissions and limitations 
 '''
 
 x = 1
-y = x
+y = 1
 z = 2
 
-print(y == x)
 print(y is x)
-print("IDs:", id(x), id(y))
 print(y is not z)
