@@ -16,25 +16,25 @@ print("=")
 x = 4
 print(x)
 print("+=")
-x += 1
+x += 1  # x = x + 1
 print(x)
 print("-=")
-x -= 1
+x -= 1  # x = x - 1
 print(x)
 print("*=")
-x *= 2
+x *= 2  # x = x * 2
 print(x)
 print("/=")
-x /= 2
+x /= 2  # x = x / 2
 print(x)
 print("//=")
-x //= 0.8
+x //= 0.8  # x = x // 0.8
 print(x)
 print("%=")
-x %= 3
+x %= 3  # x = x % 3
 print(x)
 print("**=")
-x **= 2
+x **= 2  # x = x ** 2
 print(x)
 
 # ToDo: Use assign operators in 1.0 ToDo.
