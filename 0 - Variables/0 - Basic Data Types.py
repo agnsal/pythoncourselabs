@@ -24,22 +24,32 @@ dt = type(d)
 e = False
 et = type(e)
 
-print("A:")
-print(a)
-print(at)
-print(aID)
-print("B:")
-print(b)
-print(bt)
-print("C:")
-print(c)
-print(ct)
-print("D:")
-print(d)
-print(dt)
-print("E:")
-print(e)
-print(et)
+# print("A:")
+# print(a)
+# print(at)
+# print(aID)
+# print("B:")
+# print(b)
+# print(bt)
+# print("C:")
+# print(c)
+# print(ct)
+# print("D:")
+# print(d)
+# print(dt)
+# print("E:")
+# print(e)
+# print(et)
 
 # What's the type of "1"?
+# q = '1'
+q = "1"
+print(q)
+print(type(q))
+iq = int(q)
+print(iq)
+print(type(iq))
+
+# int("ciao")  # Errore!!!
+
 # ToDo: Print Function with IDs too.

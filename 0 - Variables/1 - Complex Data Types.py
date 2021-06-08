@@ -23,7 +23,10 @@ print(l)
 print(type(l))
 
 # Dict
-d = {'ita': 'ciao', 'eng': 'hello'}
+d = {
+    'ita': 'ciao',
+    'eng': 'hello'
+}
 print(d)
 print(type(d))
 
