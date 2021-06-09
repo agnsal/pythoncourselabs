@@ -97,3 +97,10 @@ print(f"######## count 'Python' in text ########\n{text.count('Python')}")
 print(f"######## count 'Ita' in text ########\n{text.count('Ita')}")
 
 # ToDo: Make a def that returns how many instances of some input words are present in an input text.
+
+
+def countWord(text: str, word: str):
+    return text.upper().count(word.upper())
+
+
+print("numero di occorrenze: ", countWord(text, 'ITa'))

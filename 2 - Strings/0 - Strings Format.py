@@ -16,12 +16,27 @@ s = "hello"
 x = "Python"
 y = "!!!"
 
-print(s + " Python" + "!!!")
-print((s + ' ') * 3 + " Python" + "!" * 10)
-print("hello %(x)s%(y)s" % {"x": "Python", "y": "!!!"})
-print("hello {0}{1}".format(x, y))
-print("hello {1} {0}".format(x, y))
-print("hello {x}{y}".format(x="Pluto", y="???"))
-print(f"hello {x}{y}")
+# print(s + " Python" + "!!!")
+# print((s + ' ') * 3 + " Python" + "!" * 10)
+# print("hello %(x)s%(y)s" % {"x": "Python", "y": "!!!"})
+# print("hello {0}{1}".format(x, y))
+# print("hello {1} {0}".format(x, y))
+# print("hello {x}{y}".format(x="Pluto", y="???"))
+# print(f"hello {x}{y}")
 
 # ToDO: Format strings coming from user inputs.
+
+# while True:
+#     x = input("Scrivi una frase: ")
+#     while not x.replace(' ', ''). replace('\t', ''):
+#         x = input("Scrivi una frase: ")
+#     print("L'utente ha scritto: ", x)
+
+
+testo = "L'utente ha scritto: "
+x = 0
+while x != "#":
+    x = input('inserisci stringa, termina con #: ')
+    if x != "#":
+        testo += (x + "; ")
+print(testo)

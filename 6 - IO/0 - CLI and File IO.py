@@ -12,16 +12,18 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License
 '''
 
-name = input("Name: ")
-print(f"Name is {name}")
-
-myFileW = open("test.txt", "w")
-myFileW.write(name)
-myFileW.close()
+# name = input("Name: ")
+# print(f"Name is {name}")
+#
+# myFileW = open("test.txt", "w")
+# # myFileW = open("test.txt", "a")
+# myFileW.write(name + "\n")
+# myFileW.close()
 
 try:
     myFileR = open("test.txt", "r")
     content = myFileR.read()
+    myFileR.close()
     print(f"Content: {content}")
 except Exception as e:
     print(f"File not opened: {e}")

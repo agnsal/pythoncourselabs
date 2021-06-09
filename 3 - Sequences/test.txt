@@ -1,0 +1,1 @@
+Stampa degli utlimi dieci caratteri del file.
