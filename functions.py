@@ -123,8 +123,9 @@ def ricorsiva(l):
 # lambdaRef = lambda s: print(s)
 # lambdaRef("ciao")
 
-l = [0, 1, 2, ["ciao", "python", 3], 4, 5, [6, 7]]
-print("Non ricorsiva:")
-nonRicorsiva(l)
-print("Ricorsiva:")
-ricorsiva(l)
+if __name__ == "__main__":
+    l = [0, 1, 2, ["ciao", "python", 3], 4, 5, [6, 7]]
+    print("Non ricorsiva:")
+    nonRicorsiva(l)
+    print("Ricorsiva:")
+    ricorsiva(l)
