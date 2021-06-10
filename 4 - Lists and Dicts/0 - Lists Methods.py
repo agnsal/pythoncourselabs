@@ -61,16 +61,27 @@ l = [0, 1, 2, 3, 4, 5]
 
 
 def copyList(l: list):
-    ll = []
-    for li in l:
-        ll.append(li)
-    return ll
+    try:
+        assert isinstance(l, list)
+        ll = []
+        for li in l:
+            ll.append(li)
+        return ll
+    except Exception as e:
+        print(f"Errore: {e}")
 
-print(copyList(l))
+
+# print(copyList(1))
 
 
 def shortCopy(l: list):
-    return [item for item in l]
+    try:
+        if not isinstance(l, list):
+            raise ValueError("l NON è una lista!!!")
+        return [item for item in l]
+    except ValueError as v:
+        print(f"Si è verificato un ValueError: {v}")
 
-lCopy = shortCopy(l)
+
+lCopy = shortCopy(1)
 print(lCopy)
