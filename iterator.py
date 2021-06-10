@@ -13,10 +13,14 @@ print("Iteratore: ", iteratore, type(iteratore))
 listaDaIteratore = list(iteratore)
 print("listaDaIteratore: ", listaDaIteratore)
 
-printNext = lambda i: print(next(i))
+printNext = lambda i: next(i)
 while True:
     try:
-        printNext(iteratore)
+        n = printNext(iteratore)
+        if n:
+            print(n)
+        else:
+            raise StopIteration("Out of Range!!! Gli elementi dell'iter sono finiti!")
     except Exception as e:
-        print("Stop!!! Out of range!!!")
+        print("Stop!!!", e)
         break
