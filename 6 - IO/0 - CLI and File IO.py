@@ -1,6 +1,6 @@
 
 '''
-Copyright 2021 Agnese Salutari.
+Copyright 2021-2022 Agnese Salutari.
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -23,5 +23,6 @@ try:
     myFileR = open("test.txt", "r")
     content = myFileR.read()
     print(f"Content: {content}")
+    myFileR.close()
 except Exception as e:
     print(f"File not opened: {e}")
