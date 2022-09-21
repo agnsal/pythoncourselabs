@@ -65,12 +65,29 @@ See the License for the specific language governing permissions and limitations 
 #     print(z)
 
 
-l = []
-for x in range(1, 101):
-    if x % 2 == 0:
-        l.append(x)
-print(f"Verboso: {l}")
+# l = []
+# for x in range(1, 101):
+#     if x % 2 == 0:
+#         l.append(x)
+# print(f"Verboso: {l}")
+#
+# l = [x for x in range(1, 101) if x % 2 == 0]
+# print(f"Breve: {l}")
+#
+# l2 = [x if x % 2 == 0 else 'dispari' for x in range(1, 101)]
+# # l2 = [x * 2 if x % 2 == 0 else 'dispari' for x in range(1, 101)]
+# print(l2)
+#
+# l3 = [1, 2, 3]
+# l4 = [x if x % 2 == 0 else 'dispari' for x in l3]
+# print(l4)
 
-l = [x for x in range(1, 101) if x % 2 == 0]
-print(f"Breve: {l}")
+
+x = 0
+while x < 10:
+    x += 1
+    # altre elaborazioni
+    x = 0
+    print(x)
+
 
