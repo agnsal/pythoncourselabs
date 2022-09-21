@@ -25,3 +25,6 @@ print("hello {x}{y}".format(x="Pluto", y="???"))
 print(f"hello {x}{y}")
 
 # ToDO: Format strings coming from user inputs.
+'''
+nome, cognome => "L'utente <nome> ha il cognome <cognome>
+'''

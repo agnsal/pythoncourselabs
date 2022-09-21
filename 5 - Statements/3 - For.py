@@ -12,6 +12,8 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License
 '''
 
+from functools import reduce
+
 # l = [0, 1, 2, 3, 4, 5]
 # for x in l:
 #     print(x)
@@ -83,11 +85,38 @@ See the License for the specific language governing permissions and limitations 
 # print(l4)
 
 
-x = 0
-while x < 10:
-    x += 1
-    # altre elaborazioni
-    x = 0
-    print(x)
+# x = 0
+# while x < 10:
+#     x += 1
+#     # altre elaborazioni
+#     x = 0
+#     print(x)
 
 
+# s = 'ciaooooo!'
+# d = {k: ord(k) for k in s}
+# print(d)
+#
+# mySet = {k for k in s}
+# print(mySet)
+
+
+# for elem in [1, 2, 3]:
+#     print(elem)
+#
+# for i, v in enumerate([1, 2, 3]):
+#     print(f"Index: {i} - Value: {v}")
+#
+# for x in enumerate([1, 2, 3]):
+#     print(f"Test: {x}")
+#     print(f"Test type: {type(x)}")
+
+l = [1, 2, 3, 4]
+
+def sum(p1, p2):
+    return p1 + p2
+
+res = reduce(sum, l)
+print(res)
+
+# print(sum(2, 3))

@@ -12,27 +12,27 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License
 '''
 
-print(int(10))
-print(int(False))
-print(int(True))
-print(int(2.1))
-print(int(2.999))
-# print(int('string'))
+# print(int(10))
+# print(int(False))
+# print(int(True))
+# print(int(2.1))
+# print(int(2.999))
+# # print(int('string'))
 
-print(float(1.2))
-print(float(False))
-print(float(True))
-print(float(5))
-print(float(3.987))
+# print(float(1.2))
+# print(float(False))
+# print(float(True))
+# print(float(5))
+# print(float(3.987))
 # print(float('string'))
-
-print(str('string'))
-print(str(False))
-print(str(True))
-print(str(10))
-print(str(1.5))
-print(str(1.598))
-
+#
+# print(str('string'))
+# print(str(False))
+# print(str(True))
+# print(str(10))
+# print(str(1.5))
+# print(str(1.598))
+#
 print(bool(False))
 print(bool(True))
 print(bool('string'))
