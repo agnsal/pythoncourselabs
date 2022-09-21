@@ -12,14 +12,24 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License
 '''
 
-x = int(input("x = "))
+# x = int(input("x = "))
+#
+# print(f"{x}")
+# print(x > 0)
+# print(x < 0)
+# print(x == 0)
+# print(x != 0)
+# print(x >= 0)
+# print(x <= 0)
 
-print(x > 0)
-print(x < 0)
-print(x == 0)
-print(x != 0)
-print(x >= 0)
-print(x <= 0)
+# if False:
+#     print('test')
+#     print('test2')
 
 # ToDo: Use if statements to make more detailed prints.
 # ToDo: Check if x in in one of the following intervals: [-2, 5], (10, 100], (200, 300)
+# x = [i for i in range(0, 10)]
+# print(x)
+
+s = 'ciao mondo'
+print(s.title())

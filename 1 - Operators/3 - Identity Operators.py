@@ -16,5 +16,11 @@ x = 1
 y = 1
 z = 2
 
-print(y is x)
-print(y is not z)
+x2 = x
+
+# print(y is x)
+# print(y is not z)
+
+print(x2 is x)
+x = 'ciao'
+print(x2 is x)

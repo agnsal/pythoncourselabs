@@ -16,17 +16,28 @@ x = 1
 y = 2
 z = 3
 
-if x != 0:
-    print("x is not 0")
+# if x != 0:
+#     print("x is not 0")
+#
+# if y == 0:
+#     print("y is 0")
+# else:
+#     print("y is not 0")
+#
+# if z is 0:
+#     print("z is 0")
+# elif z == 100:
+#     print("z is not 0, but z is 100")
+# else:
+#     print("z is not 0 and z is not 100")
 
-if y == 0:
-    print("y is 0")
+x = 101
+if x < 10:
+    print(f"{x} è minore di 10")
+elif x == 10:
+    print(f"{x} è uguale a 10")
+elif x == 100:
+    print(f"{x} è uguale a 100")
 else:
-    print("y is not 0")
-
-if z is 0:
-    print("z is 0")
-elif z == 100:
-    print("z is not 0, but z is 100")
-else:
-    print("z is not 0 and z is not 100")
+    print(f"{x} è maggiore di 10 e diverso da 100")
+print('Fine!')

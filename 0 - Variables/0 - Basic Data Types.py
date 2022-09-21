@@ -12,7 +12,9 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License
 '''
 
-a = 1
+a = 1  # Commento di una riga
+'''Questo è un commento
+vado a capo'''
 at = type(a)
 aID = id(a)
 b = 1.0

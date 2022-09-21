@@ -12,9 +12,14 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License
 '''
 
-x = 0
+# x = 0
+#
+# while x < 10:
+#     print(x)
+#     x += 1
+# print("The End")
 
-while x < 10:
-    print(x)
-    x += 1
-print("The End")
+u = None
+while u not in ['y', 'n']:
+    u = input('Inserisci y per si, n per no: ')
+print(f"Valore scelto: {u}")
