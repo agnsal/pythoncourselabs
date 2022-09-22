@@ -21,7 +21,7 @@ from functools import reduce
 
 # d = {'ita': 'ciao', 'eng': 'hello'}
 # for y in d:
-#     print(d[y])
+#     print(y, d[y])
 # print('The End')
 #
 # s = 'python'
@@ -111,12 +111,12 @@ from functools import reduce
 #     print(f"Test: {x}")
 #     print(f"Test type: {type(x)}")
 
-l = [1, 2, 3, 4]
-
-def sum(p1, p2):
-    return p1 + p2
-
-res = reduce(sum, l)
-print(res)
+# l = [1, 2, 3, 4]
+#
+# def sum(p1, p2):
+#     return p1 + p2
+#
+# res = reduce(sum, l)
+# print(res)
 
 # print(sum(2, 3))

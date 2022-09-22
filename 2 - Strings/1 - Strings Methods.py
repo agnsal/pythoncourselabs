@@ -104,3 +104,5 @@ while not x:
     x = input('Inserisci la parola da cercare: ')
 print(f"La parola da cercare è {x}")
 print(f"La parola {x} è presente {text.lower().count(x)} volte.")
+
+

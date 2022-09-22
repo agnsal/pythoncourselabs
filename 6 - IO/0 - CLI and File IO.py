@@ -12,12 +12,12 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License
 '''
 
-name = input("Name: ")
-print(f"Name is {name}")
-
-myFileW = open("test.txt", "w")
-myFileW.write(name)
-myFileW.close()
+# name = input("Name: ")
+# print(f"Name is {name}")
+#
+# myFileW = open("test.txt", "w")
+# myFileW.write(name)
+# myFileW.close()
 
 try:
     myFileR = open("test.txt", "r")
