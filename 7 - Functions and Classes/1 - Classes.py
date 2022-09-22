@@ -31,5 +31,16 @@ class fileReader:
         return content
 
 
+class extender(fileReader):
+    def test(self):
+        print('test')
+
+
 fm = fileReader('test.txt')
 print(fm.readFile())
+# fm.test()  # Non c'è
+
+
+fm2 = extender('test.txt')
+print(fm2.readFile())
+fm2.test()

@@ -1,6 +1,6 @@
 import numpy
 # import dictExplorer  # from dictExplorer import *  # 1
-from dictExplorer import esplora2  # 2
+# from dictExplorer import esplora2  # 2
 from dictExplorer import esplora2 as e  # 3
 # from dictExplorer import esplora, esplora2
 
