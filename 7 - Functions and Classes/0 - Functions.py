@@ -17,6 +17,7 @@ def readMyFile(fileName: str):
     try:
         f = open(fileName, "r")
         content = f.read()
+        f.close()
         return True, content
     except Exception as e:
         return False, e
