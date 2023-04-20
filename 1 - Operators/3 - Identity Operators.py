@@ -12,9 +12,29 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License
 '''
 
+print('1) ----')
+x = 1
+y = x
+z = 2
+print(y is x)
+print(y is not z)
+print('-------')
+
+print('2) ----')
 x = 1
 y = 1
 z = 2
-
 print(y is x)
 print(y is not z)
+print('-------')
+
+print('3) ----')
+x = 1000
+y = 1000
+print(y is x)
+print(id(x) == id(y), id(x), id(y))
+y += 0
+print(y is x)
+print(id(x) == id(y), id(x), id(y))
+print('-------')
+
