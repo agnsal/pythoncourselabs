@@ -29,5 +29,6 @@ print(type(d))
 
 # Set
 s = {0, 1, 2, 3, 4, 4, 4}
+# s = set()
 print(s)
 print(type(s))
