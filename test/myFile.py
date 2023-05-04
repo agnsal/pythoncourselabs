@@ -101,11 +101,66 @@
 # print([item for item in range(0, 1001)])
 
 
-myList = []
-print(myList)
-for item in range(0, 10):
-    if item % 2 == 1:
-        myList.append(item)
-print(myList)
+# myList = []
+# print(myList)
+# for item in range(0, 10):
+#     if item % 2 == 1:
+#         myList.append(item)
+# print(myList)
 
-print([item for item in range(0, 10) if item % 2 == 1])
+# print([item for item in range(0, 10) if item % 2 == 1])
+#
+# print([item * 2 if item % 2 == 1 else item for item in range(0, 10)])
+
+# print(ord('a'), ' - ', ord('b'))
+
+# parola = "hello"
+# d = {}
+# for lettera in parola:
+#     d[lettera] = ord(lettera)
+# print(d)
+
+# d = {k: ord(k) for k in parola}
+# print(d, ' - ', type(d))
+
+
+# parola = "doppione"
+# myList = []
+# for lettera in parola:
+#     myList.append(lettera)
+# print(myList)
+
+# mySet = set()
+# for lettera in parola:
+#     mySet.add(lettera)
+# print(mySet)
+#
+# print({lettera for lettera in parola})
+
+# myList = ["franco", "martina", "carla"]
+# # for x in myList:
+# #     print(x)
+# for posizione, x in enumerate(myList):
+#     print('Pos: ', posizione, ' - Elem: ', x)
+#     print(x, ' è amico di ', myList[posizione - 1])
+
+
+s = "Ciao Python!!!"
+delta = 1
+# Cifro
+c = ''
+for lettera in s:
+    o = ord(lettera)
+    print(lettera, ' - ', o, ' - ', chr(o))
+    newOrd = o - delta
+    c += chr(newOrd)
+print(c)
+
+# Decifro
+t = ''
+for lettera in c:
+    o = ord(lettera)
+    newOrd = o + delta
+    t += chr(newOrd)
+print(t)
+
