@@ -21,9 +21,9 @@ See the License for the specific language governing permissions and limitations 
 # esterna()
 
 
-print("=")
-x = 4
-print(x)
+# print("=")
+# x = 4
+# print(x)
 # print("+=")
 # x += 1
 # print(x)
@@ -47,3 +47,5 @@ print(x)
 # print(x)
 
 # ToDo: Use assign operators in 1.0 ToDo.
+
+y = 10

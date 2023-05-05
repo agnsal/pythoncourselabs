@@ -23,6 +23,7 @@ print('-------')
 print('2) ----')
 x = 1
 y = 1
+y += 10
 z = 2
 print(y is x)
 print(y is not z)
