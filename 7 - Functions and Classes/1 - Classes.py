@@ -13,7 +13,7 @@ See the License for the specific language governing permissions and limitations 
 '''
 
 
-class fileReader:
+class FileReader:
 
     def __init__(self, fileName: str="t.txt"):
         assert isinstance(fileName, str)
@@ -31,5 +31,5 @@ class fileReader:
         return content
 
 
-fm = fileReader('test.txt')
+fm = FileReader('test.txt')
 print(fm.readFile())
