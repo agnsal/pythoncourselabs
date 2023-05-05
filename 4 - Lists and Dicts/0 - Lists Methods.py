@@ -12,15 +12,15 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License
 '''
 
-l = [0, 1, 2, 3, 4, 5]
-print(f"l: {l}; len(l): {len(l)}")
-print(f"l[0]: {l[0]}; type(l[0]): {type(l[0])}")
-print(f"l[0]: {l[0]}; type(l[0]): {type(l[0])}")
+# l = [0, 1, 2, 3, 4, 5]
+# print(f"l: {l}; len(l): {len(l)}")
+# print(f"l[0]: {l[0]}; type(l[0]): {type(l[0])}")
+# print(f"l[-1]: {l[-1]}; type(l[-1]): {type(l[-1])}")
 
-ll = [[0, 1], [2, 3], [4, 5]]
-print(f"ll: {ll}; len(ll: {len(ll)}")
-print(f"ll[0]: {ll[0]}; type(ll[0]): {type(ll[0])}; len(ll[0]): {len(ll[0])}")
-print(f"ll[0][0]: {ll[0][0]}; type(l[0][0]): {type(ll[0][0])}")
+# ll = [[0, 1], [2, 3], [4, 5]]
+# print(f"ll: {ll}; len(ll: {len(ll)}")
+# print(f"ll[0]: {ll[0]}; type(ll[0]): {type(ll[0])}; len(ll[0]): {len(ll[0])}")
+# print(f"ll[0][0]: {ll[0][0]}; type(l[0][0]): {type(ll[0][0])}")
 
 myList = list()
 print(f"myList: {myList}; len(myList): {len(myList)}")
