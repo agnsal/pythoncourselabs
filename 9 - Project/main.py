@@ -12,6 +12,17 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License
 '''
 
+from csv import DictReader
+import pandas as pd
+
+def csvRead(path):
+    with open(path) as data:
+        res = list(DictReader(data))
+    return res
+
+
+def pandasRead(path):
+    return pd.read_csv(path)
 
 def main():
     # ToDo: Get data from the given csv files, once using csv, once using Pandas
@@ -23,7 +34,12 @@ def main():
     # ToDo: Write all the results in out.txt file (with Python)
     # ToDo: Write the results using Python logging
     # ToDo (finally): Now use a venv
-    pass
+    filePath = "datasets/fitness.csv"
+    csvContent = csvRead(filePath)
+    pandasContent = pandasRead(filePath)
+    print(csvContent)
+    print(pandasContent)
+    pandasContent.to_excel("datasets/fitness.xlsx", header=True, index=True)
 
 
 if __name__ == "__main__":

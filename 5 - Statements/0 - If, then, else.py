@@ -15,6 +15,7 @@ See the License for the specific language governing permissions and limitations 
 x = 1
 y = 2
 z = 3
+s = z
 
 if x != 0:
     print("x is not 0")
@@ -24,8 +25,13 @@ if y == 0:
 else:
     print("y is not 0")
 
-if z is 0:
-    print("z is 0")
+if z is s:
+    print("z and s are the same object")
+else:
+    print("z and s are not the same object")
+
+if z == 0:
+    print("z = 0")
 elif z == 100:
     print("z is not 0, but z is 100")
 else:

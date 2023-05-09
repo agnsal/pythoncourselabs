@@ -61,7 +61,12 @@ x = {
             "gender": "F",
             "test": {
                 "public": {
-                    "newLevel": 10
+                    "newLevel": 10,
+                    "x": {
+                        "y": {
+                            "z": 1
+                        }
+                    }
                 }
             }
         }
@@ -82,30 +87,52 @@ x = {
 #
 # test()
 
-# def ricerca(daCercare, dizionario):
+def ricerca(daCercare, dizionario):
+    for k, v in dizionario.items():
+        # if k == "public" or k == "email":
+        if k in daCercare:
+            print(f"key: {k} - val: {v}")
+        if isinstance(v, dict):
+            for k1, v1 in v.items():
+                if k1 in daCercare:
+                    print(f"key_1: {k1} - val_1: {v1}")
+                if isinstance(v1, dict):
+                    for k2, v2 in v1.items():
+                        if k2 in daCercare:
+                            print(f"key_2: {k2} - val_2: {v2}")
+
+
+# def check(item, val, l):
+#     if item not in l:
+#         print(f"key: {item} - val: {val}")
+
+# def ricercaE(daEvitare, dizionario):
 #     for k, v in dizionario.items():
-#         # if k == "public" or k == "email":
-#         if k in daCercare:
-#             print(f"key: {k} - val: {v}")
+#         check(k, v, daEvitare)
 #         if isinstance(v, dict):
 #             for k1, v1 in v.items():
-#                 if k1 in daCercare:
-#                     print(f"key_1: {k1} - val_1: {v1}")
+#                 check(k1, v1, daEvitare)
 #                 if isinstance(v1, dict):
 #                     for k2, v2 in v1.items():
-#                         if k2 in daCercare:
-#                             print(f"key_2: {k2} - val_2: {v2}")
+#                         check(k2, v2, daEvitare)
 #
 #
 # cercati = ["public", "email"]
-# risultato = ricerca(cercati, x)
+# evitati = ["test", "email", "private", "public"]
+# risultato = ricercaE(evitati, x)
 
 
-def naviga(d):
+def naviga(d, f):
     assert isinstance(d, dict)
     for k, v in d.items():
-        print(f"k: {k} - v:{v}")
+        if k not in f:  # Tutti
+            print(f"k: {k} - v: {v}")
         if isinstance(v, dict):
-            naviga(v)
+            naviga(v, f)
+        # else:  # Foglie
+        #     if k not in f:
+        #         print(f"k: {k} - v: {v}")
 
-naviga(x)
+
+indesiderati = ["test", "email", "public", "private"]
+naviga(x, indesiderati)

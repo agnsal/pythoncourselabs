@@ -18,8 +18,8 @@ for x in l:
 print("The end")
 
 d = {'ita': 'ciao', 'eng': 'hello'}
-for y in d:
-    print(d[y])
+for y in d:  # for y in d.values()
+    print(d[y])  # print(y)
 print('The End')
 
 s = 'python'
